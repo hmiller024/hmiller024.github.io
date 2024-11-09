@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.nav_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+nav .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.name{
+    font-size: 1.25rem;
+    color:#1079ac;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.contacts{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts li{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.contacts li a{
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+.contacts li:hover{
+    color: #1079ac;
+}
+
+header{
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .title{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+header h3{
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.25rem;
+    color: darkgray;
+}
+
+hr{
+    width: 50px;
+    height: 2px;
+    background-color: #1079ac;
+    color:#1079ac;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+h2{
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.projects{
+    padding-top: 25px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects img{
+    width: 150px;
+    height: 100px;
+}
+
+.projects div{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.projects a{
+    font-size: 30px;
+}
+.projects p{
+    color:#6c757d;
+    font-size: 18px;
+}
+
+.projects div:hover{
+   background-color: whitesmoke;
+   opacity: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    .projects{
+        padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .contacts li{
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 700;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        list-style-type: none;
+        padding-right: 10px;
+    }
+}
+
+/* @media only screen and (min-width: 700px) {
+    .nav-button {
+        display: none;
+    }
+} */
