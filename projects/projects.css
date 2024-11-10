@@ -1,0 +1,155 @@
+.nav_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+
+nav .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.name{
+    font-size: 1.25rem;
+    color:#1079ac;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts li{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.contacts li a{
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+.contacts li:hover{
+    color: #1079ac;
+}
+header{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color:#1079ac;
+    font-size: 34px;
+}
+
+.image-wrapper{
+    padding:20px
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    font-size: 18px;
+    font-family: 'Gentium Book Basic';
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    width: 50%;
+    justify-content: center;
+    text-align: start;
+}
+
+column{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.col-2{
+    text-align: start;
+}
+
+column ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+@media only screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    column,
+    .col-2 {
+        text-align: center;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        font-size: 16px;
+    }
+    .contacts li{
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 700;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        list-style-type: none;
+        padding-right: 2px;
+    }
+}

@@ -26,7 +26,7 @@ nav .container{
 
 .name{
     font-size: 1.25rem;
-    color:#1079ac;
+    color:#52173e;
     font-weight: 700;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     text-transform: uppercase;
@@ -53,7 +53,7 @@ nav .container{
     padding: 5px;
 }
 .contacts li:hover{
-    color: #1079ac;
+    color: #52173e;
 }
 
 header{
@@ -81,8 +81,8 @@ header h3{
 hr{
     width: 50px;
     height: 2px;
-    background-color: #1079ac;
-    color:#1079ac;
+    background-color: #52173e;
+    color:#52173e;
 }
 
 section{
