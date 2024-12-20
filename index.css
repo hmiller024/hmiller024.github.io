@@ -101,15 +101,27 @@ h2{
     font-size: 1.75rem;
 }
 
-.projects{
-    padding-top: 25px;
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+.projects div {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-align: center; /* Centers the text inside the card */
+  padding: 10px; /* Adds padding for spacing inside the card */
 }
 
+.projects a {
+  font-size: 1.5rem; /* Adjusts the font size for the titles */
+  display: block; /* Ensures the title appears on its own line */
+  margin-top: 10px; /* Adds space between the image and the title */
+  color: #000; /* Ensure title color contrasts well */
+  text-decoration: none; /* Removes underline */
+}
+
+.projects p {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-top: 5px; /* Adds space between the title and description */
+}
 .projects img {
   max-width: 100%;
   max-height: 150px;
@@ -131,13 +143,6 @@ h2{
 
 .projects img:hover {
   transform: none;
-}
-.projects a{
-    font-size: 30px;
-}
-.projects p{
-    color:#6c757d;
-    font-size: 18px;
 }
 
 .projects img:hover {
