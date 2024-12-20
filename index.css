@@ -100,7 +100,14 @@ h2{
     font-weight: 400;
     font-size: 1.75rem;
 }
-
+.projects {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 20px; 
+  width: 70%; 
+  margin: 0 auto;
+}
 .projects div {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -130,12 +137,6 @@ h2{
   transition: transform 0.3s ease;
 }
 
-.projects div {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
 .projects div:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
@@ -156,6 +157,7 @@ footer {
   font-size: 0.9rem;
   margin-top: 20px;
 }
+
 
 
 @media only screen and (max-width: 768px) {
