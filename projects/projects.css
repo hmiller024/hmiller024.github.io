@@ -19,28 +19,45 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Adjust spacing */
+  padding: 0 20px;
   z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.name {
+.nav_bar .name {
   color: #1079ac;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.contacts {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts li {
-  padding: 0 15px;
+  margin: 0 15px;
 }
 
-.contacts li:hover {
-  color: #0074a3;
+.contacts a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+  color: #1079ac;
 }
 
 .project-details {
