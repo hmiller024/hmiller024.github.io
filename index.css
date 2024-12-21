@@ -5,17 +5,49 @@ body {
     flex-direction: column;
 }
 .nav_bar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  background-color: white;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust spacing */
+  padding: 0 20px;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.contacts li a:hover {
-  border-bottom: 2px solid #52173e;
-  padding-bottom: 3px;
-  transition: all 0.3s ease;
+
+.nav_bar .name {
+  color: #1079ac;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.contacts {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts li {
+  margin: 0 15px;
+}
+
+.contacts a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+  color: #1079ac;
 }
 nav .container{
     display: flex;
