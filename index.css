@@ -1,27 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
+
 .nav_bar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Adjust spacing */
+  justify-content: space-between;
   padding: 0 20px;
   z-index: 10;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav_bar .name {
-  color: #1079ac;
+  color: #bb86fc;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -40,57 +49,18 @@ body {
 }
 
 .contacts a {
-  color: #333;
+  color: #e0e0e0;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .contacts a:hover {
-  color: #1079ac;
-}
-nav .container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-}
-
-.name{
-    font-size: 1.25rem;
-    color:#52173e;
-    font-weight: 700;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    text-transform: uppercase;
-}
-
-.contacts{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contacts li{
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 700;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    list-style-type: none;
-    padding-right: 20px;
-}
-
-.contacts li a{
-    text-decoration: none;
-    color: inherit;
-    padding: 5px;
-}
-.contacts li:hover{
-    color: #52173e;
+  color: #bb86fc;
 }
 
 header {
-  background: linear-gradient(135deg, #52173e 0%, #000 100%);
+  background: linear-gradient(135deg, #3700b3 0%, #121212 100%);
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -99,118 +69,120 @@ header {
   color: white;
 }
 
-header .title{
-    color: white;
-    text-align: center;
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 2rem;
+header .title {
+  color: white;
+  text-align: center;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2rem;
 }
 
-header h3{
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 100;
-    font-size: 1.25rem;
-    color: darkgray;
+header h3 {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.25rem;
+  color: lightgray;
 }
 
-hr{
-    width: 50px;
-    height: 2px;
-    background-color: #52173e;
-    color:#52173e;
+hr {
+  width: 50px;
+  height: 2px;
+  background-color: #bb86fc;
+  color: #bb86fc;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  flex: 1;
 }
 
-h2{
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1.75rem;
-}
 .projects {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  gap: 20px; 
-  width: 70%; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 70%;
   margin: 0 auto;
 }
+
 .projects div {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   transition: all 0.3s ease;
-  text-align: center; /* Centers the text inside the card */
-  padding: 10px; /* Adds padding for spacing inside the card */
+  text-align: center;
+  padding: 10px;
 }
 
 .projects a {
-  font-size: 1.5rem; /* Adjusts the font size for the titles */
-  display: block; /* Ensures the title appears on its own line */
-  margin-top: 10px; /* Adds space between the image and the title */
-  color: #000; /* Ensure title color contrasts well */
-  text-decoration: none; /* Removes underline */
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 10px;
+  color: #bb86fc;
+  text-decoration: none;
 }
 
 .projects p {
-  color: #6c757d;
+  color: #b0b0b0;
   font-size: 1rem;
-  margin-top: 5px; /* Adds space between the title and description */
+  margin-top: 5px;
 }
+
 .projects img {
   max-width: 100%;
   max-height: 150px;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 .projects div:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
 }
 
-.projects img:hover {
-  transform: none;
-}
-
-.projects img:hover {
-  transform: scale(1.1);
-}
 footer {
-  background-color: #52173e;
+  background-color: #1e1e1e;
   color: white;
   text-align: center;
   padding: 10px 0;
   font-size: 0.9rem;
-  margin-top: 20px;
+  margin-top: auto;
+}
+.about {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  color: #ddd;
 }
 
-
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
 
 @media only screen and (max-width: 768px) {
-    .projects{
-        padding-top: 25px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    .contacts li{
-        text-transform: uppercase;
-        font-size: .9rem;
-        font-weight: 700;
-        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-        list-style-type: none;
-        padding-right: 10px;
-    }
-    
-}
+  .projects {
+      padding-top: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+  }
 
+  .contacts li {
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: 700;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      list-style-type: none;
+      padding-right: 10px;
+  }
+}
